@@ -1,0 +1,22 @@
+html, body {
+  font-family: "Poppins" "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Define variables in .light-theme */
+.light-theme {
+  --primary-color: #000000; /* Default value */
+  --secondary-color: #000000; /* Default value */
+  --tertiary-color: #000000; /* Default value */
+  --heading-color: #000000; /* Default value */
+  --paragraph-color: #000000; /* Default value */
+  --component-shadow-color: #000000; /* Default value */
+}
+
+/* Apply variables to children */
+.light-theme h1, .light-theme h2, .light-theme h3, .light-theme h4, .light-theme h5, .light-theme h6 {
+  color: var(--heading-color);
+}
+
+.light-theme p {
+  color: var(--paragraph-color);
+}/*# sourceMappingURL=theme.css.map */
