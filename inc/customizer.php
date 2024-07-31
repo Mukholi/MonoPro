@@ -19,50 +19,6 @@ function wordpress_customize_register( $wp_customize ) {
     $wp_customize->get_control( 'site_icon' )->priority = 30;
     $wp_customize->get_control( 'custom_logo' )->priority = 40;
 
-	
-
-  // Add a checkbox to use site font as default
-  $wp_customize->add_setting( 'use_site_font', array(
-	'default'           => false,
-	'sanitize_callback' => 'sanitize_checkbox',
-) );
-
-
-// Add font family field
-$wp_customize->add_setting( 'site_font_family', array(
-	'default'           => 'Poppins, Arial, sans-serif',
-	'sanitize_callback' => 'sanitize_text_field',
-) );
-
-$wp_customize->add_control( 'site_font_family', array(
-	'label'    => __( 'Site Font Family', 'wordpress' ),
-	'section'  => 'title_tagline',
-	'type'     => 'text',
-	'priority' => 80, // Place it after existing fields
-) );
-
-// Add font link field
-$wp_customize->add_setting( 'site_font_link', array(
-	'default'           => '',
-	'sanitize_callback' => 'esc_url_raw',
-) );
-
-$wp_customize->add_control( 'site_font_link', array(
-	'label'    => __( 'Google Font Link', 'wordpress' ),
-	'section'  => 'title_tagline',
-	'type'     => 'url',
-	'priority' => 90, // Place it after the font family field
-));
-
-$wp_customize->add_control( 'use_site_font', array(
-	'label'    => __( 'Use Site Font as Default', 'wordpress' ),
-	'section'  => 'title_tagline',
-	'type'     => 'checkbox',
-	'priority' => 91, // Place it after existing fields
-) );
-
-
-
 }
 add_action( 'customize_register', 'wordpress_customize_register' );
 

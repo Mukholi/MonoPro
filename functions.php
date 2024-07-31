@@ -211,13 +211,13 @@ function wordpress_customize_add_sections( $wp_customize ) {
     // Add Light Theme Colors section
     $wp_customize->add_section( 'light_theme_colors', array(
         'title'    => __( 'Light Theme Colors', 'wordpress' ),
-        'priority' => 130,
+        'priority' => 100,
     ) );
 
     // Add Dark Theme Colors section
     $wp_customize->add_section( 'dark_theme_colors', array(
         'title'    => __( 'Dark Theme Colors', 'wordpress' ),
-        'priority' => 140,
+        'priority' => 101,
     ) );
 
     // Light Theme Colors Settings
@@ -265,6 +265,161 @@ function wordpress_customize_add_sections( $wp_customize ) {
             'section'  => 'dark_theme_colors',
             'settings' => "dark_{$id}",
         ) ) );
+
+
+
+		// Add a new Fonts section
+		$wp_customize->add_section( 'fonts_section', array(
+			'title'    => __( 'Fonts', 'wordpress' ),
+			'priority' => 103,
+		) );
+
+		// Font settings
+		$fonts = array(
+			'use_font' => __( 'Use Custom Font', 'wordpress' ),
+			'font_family' => __( 'Font Family', 'wordpress' ),
+			'font_uri' => __( 'Font URI', 'wordpress' ),
+			'font_weight' => __( 'Font Weight', 'wordpress' ),
+			'letter_spacing' => __( 'Letter Spacing', 'wordpress' ),
+			'line_height' => __( 'Line Height', 'wordpress' ),
+		);
+
+		// Add font use checkbox
+		$wp_customize->add_setting( 'use_font', array(
+			'default'           => false,
+			'sanitize_callback' => 'sanitize_checkbox',
+		) );
+		$wp_customize->add_control( 'use_font', array(
+			'label'    => $fonts['use_font'],
+			'section'  => 'fonts_section',
+			'type'     => 'checkbox',
+			'priority' => 10,
+		) );
+
+		// Add font family
+		$wp_customize->add_setting( 'font_family', array(
+			'default'           => 'Arial, sans-serif',
+			'sanitize_callback' => 'sanitize_text_field',
+		) );
+		$wp_customize->add_control( 'font_family', array(
+			'label'    => $fonts['font_family'],
+			'section'  => 'fonts_section',
+			'type'     => 'text',
+			'priority' => 20,
+		) );
+
+		// Add font URI
+		$wp_customize->add_setting( 'font_uri', array(
+			'default'           => '',
+			'sanitize_callback' => 'esc_url_raw',
+		) );
+		$wp_customize->add_control( 'font_uri', array(
+			'label'    => $fonts['font_uri'],
+			'section'  => 'fonts_section',
+			'type'     => 'text',
+			'priority' => 30,
+		) );
+
+		// Add font weight
+		$wp_customize->add_setting( 'font_weight', array(
+			'default'           => '400',
+			'sanitize_callback' => 'absint',
+		) );
+		$wp_customize->add_control( 'font_weight', array(
+			'label'    => $fonts['font_weight'],
+			'section'  => 'fonts_section',
+			'type'     => 'range',
+			'input_attrs' => array(
+				'min' => 100,
+				'max' => 900,
+				'step' => 100,
+			),
+			'priority' => 40,
+		) );
+
+		// Add letter spacing
+		$wp_customize->add_setting( 'letter_spacing', array(
+			'default'           => '0px',
+			'sanitize_callback' => 'sanitize_text_field',
+		) );
+		$wp_customize->add_control( 'letter_spacing', array(
+			'label'    => $fonts['letter_spacing'],
+			'section'  => 'fonts_section',
+			'type'     => 'text',
+			'priority' => 50,
+		) );
+
+		// Add line height
+		$wp_customize->add_setting( 'line_height', array(
+			'default'           => '1.5',
+			'sanitize_callback' => 'sanitize_text_field',
+		) );
+		$wp_customize->add_control( 'line_height', array(
+			'label'    => $fonts['line_height'],
+			'section'  => 'fonts_section',
+			'type'     => 'text',
+			'priority' => 60,
+		) );
+
+		// Apply the settings to different elements
+		$text_elements = array(
+			'heading' => __( 'Heading Text', 'wordpress' ),
+			'paragraph' => __( 'Paragraph Text', 'wordpress' ),
+			'pagination' => __( 'Pagination Text', 'wordpress' ),
+			'heading_list' => __( 'Heading List Text', 'wordpress' ),
+			'paragraph_list' => __( 'Paragraph List Text', 'wordpress' ),
+		);
+
+		foreach ( $text_elements as $element => $label ) {
+			$wp_customize->add_setting( $element . '_font_family', array(
+				'default'           => '',
+				'sanitize_callback' => 'sanitize_text_field',
+			) );
+			$wp_customize->add_control( $element . '_font_family', array(
+				'label'    => $label . ' ' . $fonts['font_family'],
+				'section'  => 'fonts_section',
+				'type'     => 'text',
+				'priority' => 70,
+			) );
+
+			$wp_customize->add_setting( $element . '_font_weight', array(
+				'default'           => '400',
+				'sanitize_callback' => 'absint',
+			) );
+			$wp_customize->add_control( $element . '_font_weight', array(
+				'label'    => $label . ' ' . $fonts['font_weight'],
+				'section'  => 'fonts_section',
+				'type'     => 'range',
+				'input_attrs' => array(
+					'min' => 100,
+					'max' => 900,
+					'step' => 100,
+				),
+				'priority' => 80,
+			) );
+
+			$wp_customize->add_setting( $element . '_letter_spacing', array(
+				'default'           => '0px',
+				'sanitize_callback' => 'sanitize_text_field',
+			) );
+			$wp_customize->add_control( $element . '_letter_spacing', array(
+				'label'    => $label . ' ' . $fonts['letter_spacing'],
+				'section'  => 'fonts_section',
+				'type'     => 'text',
+				'priority' => 90,
+			) );
+
+			$wp_customize->add_setting( $element . '_line_height', array(
+				'default'           => '1.5',
+				'sanitize_callback' => 'sanitize_text_field',
+			) );
+			$wp_customize->add_control( $element . '_line_height', array(
+				'label'    => $label . ' ' . $fonts['line_height'],
+				'section'  => 'fonts_section',
+				'type'     => 'text',
+				'priority' => 100,
+			) );
+		}
     }
 }
 add_action( 'customize_register', 'wordpress_customize_add_sections', 20 );
