@@ -28,5 +28,22 @@ get_header();
 
 	</main><!-- #main -->
 
+	<div class="mono-pro-component-selector-container">
+		<div class="mono-pro-component-selector element-bg-color" id="mono-pro-component-selector-x">
+			<div class="mono-pro-component-selector-item-header">
+				<p class="font-color mono-pro-component-selector-item-header-text">x</p>
+				<p class="icon-color">+</p>
+			</div>
+			<ul class="mono-pro-component-selector-list">
+				<li class="mono-pro-component-selector-item selector-item-active"><p class="font-color">All Projects</p></li>
+				<li class="mono-pro-component-selector-item"><p class="font-color">Web</p></li>
+				<li class="mono-pro-component-selector-item"><p class="font-color">Design</p></li>
+				<li class="mono-pro-component-selector-item"><p class="font-color">Animation</p></li>
+			</ul>
+		</div>
+	</div>
+
+	<div style="height:15cm"></div>
+
 <?php
 get_footer();

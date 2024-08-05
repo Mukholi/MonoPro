@@ -1,6 +1,210 @@
 html,body{
     font-family:'Poppins' 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+//FONTS
+h1,h2,h3,h4,h5,h6,p{
+    margin: unset;
+}
+u{
+    text-decoration-thickness: 2px;
+}
+
+@media (min-width: 0px){
+    h1{
+        font-size: 1em !important;
+    }
+    h2{
+        font-size: 0.75em !important;
+    }
+    h3{
+        font-size: 0.56em !important;
+    }
+    h4{
+        font-size: 0.42em !important;
+    }
+    h5{
+        font-size: 0.31em !important;
+    }
+    h5{
+        font-size: 0.23em !important;
+    }
+    p{
+        font-size: 0.8em !important;
+    }
+}
+@media (min-width: 319px){
+    h1{
+        font-size: 1.8em !important;
+    }
+    h2{
+        font-size: 1.35em !important;
+    }
+    h3{
+        font-size: 1.01em !important;
+    }
+    h4{
+        font-size: 0.76em !important;
+    }
+    h5{
+        font-size: 0.57em !important;
+    }
+    h6{
+        font-size: 0.43em !important;
+    }
+    p{
+        font-size: 0.8em !important;
+    }
+}
+@media (min-width: 374px){
+    h1{
+        font-size: 1.9em !important;
+    }
+    h2{
+        font-size: 1.9em !important;
+    }
+    h3{
+        font-size: 1.9em !important;
+    }
+    h4{
+        font-size: 1.9em !important;
+    }
+    h5{
+        font-size: 1.9em !important;
+    }
+    h6{
+        font-size: 1.9em !important;
+    }
+    p{
+        font-size: 0.9em !important;
+    }
+}
+@media (min-width: 424px){
+    h1{
+        font-size: 1.6em !important;
+    }
+    h2{
+        font-size: 1.2em !important;
+    }
+    h3{
+        font-size: 0.9em !important;
+    }
+    h4{
+        font-size: 0.67em !important;
+    }
+    h5{
+        font-size: 0.50em !important;
+    }
+    h6{
+        font-size: 0.37em !important;
+    }
+    p{
+        font-size: 0.8em !important;
+    }
+}
+@media (min-width: 767px){
+    h1{
+        font-size: 1.8em !important;
+    }
+    h2{
+        font-size: 1.35em !important;
+    }
+    h3{
+        font-size: 1.01em !important;
+    }
+    h4{
+        font-size: 0.75em !important;
+    }
+    h5{
+        font-size: 0.56em !important;
+    }
+    p{
+        font-size: 0.8em !important;
+    }
+}
+@media (min-width: 1023px){
+    h1{
+        font-size: 1.9em !important;
+    }
+    h2{
+        font-size: 1.42em !important;
+    }
+    h3{
+        font-size: 1.07em !important;
+    }
+    h4{
+        font-size: 0.80em !important;
+    }
+    h5{
+        font-size: 0.6em !important;
+    }
+    h6{
+        font-size: 0.45em !important;
+    }
+    p{
+        font-size: 1em !important;
+    }
+}
+@media (min-width: 1070px){
+    h1{
+        font-size: 2.25em !important;
+    }
+    h2{
+        font-size: 1.68em !important;
+    }
+    h3{
+        font-size: 1.26em !important;
+    }
+    h4{
+        font-size: 0.95em !important;
+    }
+    h5{
+        font-size: 0.71em !important;
+    }
+    h6{
+        font-size: 0.53em !important;
+    }
+    p{
+        font-size: 1em !important;
+    }
+}
+@media (min-width: 1439px){
+    h1{
+        font-size: 2.6em !important;
+    }
+    p{
+        font-size: 1.1em !important;
+    }
+}
+
+p{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+h1{
+    font-size: 2.2em;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+//COLORS
+
+$primaryColor: Orange;
+
+$fontColorLight: black;
+$fontColorDark: white;
+
+$elementBgColorLight: #F0F0F0;
+$elementBgColorDark: #F0F0F0;
+
+$elementFgColorLight: white;
+$elementFgColorDark: white;
+
+$elementHighLightColorLight: #F7F7F7;
+$elementHighLightColorDark: white;
+
+//BORDER-RADIUS
+$mono-pro-baseline:30px;
+
 
 /* Define variables in .light-theme */
 .light-theme {
@@ -10,12 +214,181 @@ html,body{
     --heading-color: #000000; /* Default value */
     --paragraph-color: #000000; /* Default value */
     --component-shadow-color: #000000; /* Default value */
+
+    h1, h2, h3, h4, h5, h6{
+        color: var(--heading-color);
+    }
+    p{
+        color: var(--paragraph-color);
+    }
+
+    //Light Mode Text Color
+    .font-color{
+        color: $fontColorLight;
+    }
+
+    .element-bg-color{
+        background-color: $elementBgColorLight;
+    }
 }
 
-/* Apply variables to children */
-.light-theme h1, .light-theme h2, .light-theme h3, .light-theme h4, .light-theme h5, .light-theme h6 {
-    color: var(--heading-color);
-}
-.light-theme p{
-    color: var(--paragraph-color);
+
+//SELECTOR
+.mono-pro-component-selector-container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: unset;
+    margin: 0 auto;
+    @media (min-width: 0px){
+    .mono-pro-component-selector{
+        position: relative;
+        margin-left: unset;
+        margin-right: unset;
+        width: 100%;
+        height: inherit;
+        padding: 0 $mono-pro-baseline/2;
+        border-radius: $mono-pro-baseline/1.25;
+        .mono-pro-component-selector-item-header{
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: $mono-pro-baseline*1.5;
+            padding:0 $mono-pro-baseline/2;
+            border-radius: $mono-pro-baseline /3;
+            background: $elementFgColorLight;
+            margin: $mono-pro-baseline/1.5 0px;
+            cursor: pointer;
+            p{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: unset;
+                margin: unset;
+                text-align: center;
+            }
+            p:nth-child(2){
+                margin-left: auto;
+            }
+        }
+        .mono-pro-component-selector-list{
+            position: relative;
+            display: none;
+            width: 100%;
+            height: 0%;
+            align-items: center;
+            list-style-type: none;
+            margin: unset;
+            padding: 10px 0px;
+            overflow: hidden;
+            border-radius: $mono-pro-baseline/2;
+            background: $elementFgColorLight;
+            margin-bottom: $mono-pro-baseline/1.5;
+            .mono-pro-component-selector-item{
+                position: relative;
+                display: none;
+                align-items: center;
+                width: 95%;
+                height: $mono-pro-baseline*1;
+                margin: 0 auto;
+                margin-bottom: 5px;
+                padding: $mono-pro-baseline/2 $mono-pro-baseline/2;
+                border-radius: $mono-pro-baseline /3;
+                cursor: pointer;
+                p{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: unset;
+                margin: unset;
+                text-align: center;
+                }
+            }
+
+            .mono-pro-component-selector-item:hover{
+                background: $elementHighLightColorLight;
+                p{
+                    color: $primaryColor;
+                }
+            }
+            .selector-item-active{
+                background: $elementHighLightColorLight !important;
+                p{
+                    color: $primaryColor !important;
+                }
+            }
+        }
+    }
+    }
+    @media (min-width: 767px){
+    .mono-pro-component-selector{
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        height:$mono-pro-baseline*2.5;
+        width: auto;
+        padding: 0 $mono-pro-baseline/2;
+        border-radius: $mono-pro-baseline/1.25;
+        .mono-pro-component-selector-item-header{
+            display: none;
+            background: yellow;
+        }
+        .mono-pro-component-selector-list{
+            position: relative;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            height: 100%;
+            list-style-type: none;
+            margin: unset;
+            padding: unset;
+            background-color: unset;
+
+            .mono-pro-component-selector-item:nth-child(1){
+                margin-left: auto;
+            }
+            .mono-pro-component-selector-item:nth-last-child(1){
+                margin-right: auto;
+            }
+            .mono-pro-component-selector-item{
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: $mono-pro-baseline*1.5;
+                margin: 0px $mono-pro-baseline/10;
+                padding: 0 $mono-pro-baseline/2;
+                border-radius: $mono-pro-baseline /2;
+                cursor: pointer;
+                p{
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: unset;
+                margin: unset;
+                text-align: center;
+                }
+            }
+
+            .mono-pro-component-selector-item:hover{
+                background-color: $elementHighLightColorLight;
+                p{
+                    opacity: 0.25;
+                    color: $fontColorLight;
+                }
+            }
+            .selector-item-active{
+                background-color: $elementFgColorLight !important;
+                p{
+                    color: $primaryColor !important;
+                }
+            }
+            .selector-item-active:hover{
+                background-color: $elementFgColorLight !important;
+                p{
+                    color: $primaryColor !important;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    }
+
 }

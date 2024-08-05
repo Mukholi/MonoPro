@@ -142,6 +142,7 @@ function wordpress_scripts() {
 	wp_style_add_data( 'wordpress-style', 'rtl', 'replace' );
 	wp_enqueue_style( 'theme', get_template_directory_uri() . '/css/theme.css', array(), _S_VERSION );
 
+	wp_enqueue_script( 'gsap', get_template_directory_uri() . '/cdn/gsap/gsap.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'wordpress-theme', get_template_directory_uri() . '/js/theme.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
