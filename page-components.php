@@ -28,7 +28,7 @@ get_header();
 
 	</main><!-- #main -->
 
-	<div class="mono-pro-component-selector-container">
+	<!-- <div class="mono-pro-component-selector-container">
 		<div class="mono-pro-component-selector element-bg-color" id="mono-pro-component-selector-x">
 			<div class="mono-pro-component-selector-item-header">
 				<p class="font-color mono-pro-component-selector-item-header-text">x</p>
@@ -40,6 +40,58 @@ get_header();
 				<li class="mono-pro-component-selector-item"><p class="font-color">Design</p></li>
 				<li class="mono-pro-component-selector-item"><p class="font-color">Animation</p></li>
 			</ul>
+		</div>
+	</div> -->
+
+	<div class="mono-pro-component-collage-container">
+		<div class="mono-pro-component-collage">
+			<div class="mono-pro-component-collage-grid">
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+						<p>1</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>2</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>3</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>4</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>5</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>6</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>7</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>8</p>
+					</div>
+				</div>
+				<div class="mono-pro-component-collage-item-container">
+					<div class="mono-pro-component-collage-item">
+					<p>9</p>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
