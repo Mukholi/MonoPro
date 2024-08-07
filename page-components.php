@@ -44,7 +44,7 @@ get_header();
 	</div> -->
 
 	<div class="mono-pro-component-collage-container">
-		<div class="mono-pro-component-collage">
+		<div class="mono-pro-component-collage" id="mono-pro-component-collage">
 			<div class="mono-pro-component-collage-grid">
 				<div class="mono-pro-component-collage-item-container">
 					<a href="#" class="mono-pro-component-collage-item">
