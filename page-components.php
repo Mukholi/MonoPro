@@ -47,49 +47,34 @@ get_header();
 		<div class="mono-pro-component-collage">
 			<div class="mono-pro-component-collage-grid">
 				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-						<p>1</p>
-					</div>
+					<a href="#" class="mono-pro-component-collage-item">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/cat.jpg'?>">
+					</a>
 				</div>
 				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>2</p>
-					</div>
+					<a href="#" class="mono-pro-component-collage-item">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/man.jpg'?>">
+					</a>
 				</div>
 				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>3</p>
-					</div>
+					<a href="#" class="mono-pro-component-collage-item">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/pattern.jpg'?>">
+					</a>
 				</div>
 				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>4</p>
-					</div>
+					<a href="#" class="mono-pro-component-collage-item">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/leopard.jpg'?>">
+					</a>
 				</div>
 				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>5</p>
-					</div>
+					<a href="#" class="mono-pro-component-collage-item">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/puma.jpg'?>">
+					</a>
 				</div>
 				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>6</p>
-					</div>
-				</div>
-				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>7</p>
-					</div>
-				</div>
-				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>8</p>
-					</div>
-				</div>
-				<div class="mono-pro-component-collage-item-container">
-					<div class="mono-pro-component-collage-item">
-					<p>9</p>
-					</div>
+					<a href="#" class="mono-pro-component-collage-item">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/graphic3.jpg'?>">
+					</a>
 				</div>
 			</div>
 		</div>

@@ -362,4 +362,33 @@ h1 {
     color: Orange !important;
     opacity: 1;
   }
+}
+
+.mono-pro-component-collage-container {
+  position: relative;
+}
+.mono-pro-component-collage-container .mono-pro-component-collage {
+  position: relative;
+}
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container {
+  position: relative;
+  display: flex;
+  width: 33.3%;
+  overflow: hidden;
+}
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container .mono-pro-component-collage-item {
+  position: relative;
+  width: 95%;
+  margin: unset auto;
+}
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container .mono-pro-component-collage-item .mono-pro-component-collage-item-image {
+  position: relative;
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=theme.css.map */
