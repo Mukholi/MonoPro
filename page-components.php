@@ -68,7 +68,7 @@ get_header();
 				</div>
 				<div class="mono-pro-component-collage-item-container">
 					<a href="#" class="mono-pro-component-collage-item">
-						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/puma.jpg'?>">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/pattern.jpg'?>">
 					</a>
 				</div>
 				<div class="mono-pro-component-collage-item-container">
@@ -83,29 +83,15 @@ get_header();
 				</div>
 				<div class="mono-pro-component-collage-item-container">
 					<a href="#" class="mono-pro-component-collage-item">
-						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/man.jpg'?>">
-					</a>
-				</div>
-				<div class="mono-pro-component-collage-item-container">
-					<a href="#" class="mono-pro-component-collage-item">
-						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/pattern.jpg'?>">
-					</a>
-				</div>
-				<div class="mono-pro-component-collage-item-container">
-					<a href="#" class="mono-pro-component-collage-item">
-						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/leopard.jpg'?>">
-					</a>
-				</div>
-				<div class="mono-pro-component-collage-item-container">
-					<a href="#" class="mono-pro-component-collage-item">
 						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/puma.jpg'?>">
 					</a>
 				</div>
 				<div class="mono-pro-component-collage-item-container">
 					<a href="#" class="mono-pro-component-collage-item">
-						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/graphic3.jpg'?>">
+						<img class="mono-pro-component-collage-item-image" src="<?php echo get_template_directory_uri().'/cdn/image/man.jpg'?>">
 					</a>
 				</div>
+
 			</div>
 		</div>
 	</div>

@@ -379,8 +379,17 @@ h1 {
 .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container {
   position: relative;
   display: flex;
-  width: 33.3%;
   overflow: hidden;
+}
+@media (min-width: 0px) {
+  .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container {
+    width: 50%;
+  }
+}
+@media (min-width: 767px) {
+  .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container {
+    width: 33%;
+  }
 }
 .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container .mono-pro-component-collage-item {
   position: relative;

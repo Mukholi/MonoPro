@@ -407,8 +407,13 @@ $mono-pro-baseline:30px;
             .mono-pro-component-collage-item-container{
                 position: relative;
                 display: flex;
-                width: 33.3%;
                 overflow: hidden;
+                @media (min-width: 0px){
+                    width: 50%;
+                }
+                @media (min-width: 767px){
+                    width: 33%;
+                }
                 .mono-pro-component-collage-item{
                     position: relative;
                     width: 95%;
