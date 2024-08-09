@@ -65,6 +65,38 @@ var resizeIsActive = false;
 
 // })
 
+//CREATE MASONRY LAYOUT
+function createMasonryLayout(){
+    let active_mono_pro_component_collage_item = []
+    for (let counter = 0; counter < mono_pro_component_collage_item_container.length; counter++){
+        if (window.getComputedStyle(mono_pro_component_collage_item_container[counter]).display !== 'none') {
+            active_mono_pro_component_collage_item.push(mono_pro_component_collage_item_container[counter]);
+          }
+    }
+
+    if(window.innerWidth < breakPoint_767px){
+        let collageColumns = 2
+
+    }
+    else{
+        let collageColumns = 3
+        for(counter = 0; counter < active_mono_pro_component_collage_item.length; counter++){
+            active_mono_pro_component_collage_item[counter].style.marginTop = "unset"
+            if(counter >= collageColumns){
+                let elementAbove =  active_mono_pro_component_collage_item[counter - collageColumns].querySelector("img").getBoundingClientRect().bottom
+                let elementBelow =  active_mono_pro_component_collage_item[counter].querySelector("img").getBoundingClientRect().top
+                let elementAboveBellowOffset = elementAbove - elementBelow
+                let elementLeft =  active_mono_pro_component_collage_item[0].querySelector("img").getBoundingClientRect().right
+                let elementRight =  active_mono_pro_component_collage_item[1].querySelector("img").getBoundingClientRect().left
+                let elementLeftRightOffset = elementLeft - elementRight
+                active_mono_pro_component_collage_item[counter].style.marginTop = (elementAboveBellowOffset - elementLeftRightOffset) + "px"
+            }
+        }
+    }
+}
+
+
+//HIDE AND UNHIDE COLLAGE ITEMS
 setTimeout(()=>{
     if (mono_pro_component_selector_child){
         for(let counter = breakPoint_0px; counter < mono_pro_component_selector_list_items.length; counter++){
@@ -73,7 +105,9 @@ setTimeout(()=>{
                 if(counter == 0){
                     let allItems = mono_pro_component_selector_child.querySelectorAll(".mono-pro-component-collage-item-container")
                     for (let counter2 = 0; counter2 < allItems.length; counter2++){
+                        allItems[counter2].style.display = "block"
                     }
+                    createMasonryLayout()
 
                 }
                 else{
@@ -87,6 +121,7 @@ setTimeout(()=>{
                         selectedItems[counter3].style.display = "none"
  
                     }
+                    createMasonryLayout()
                 }
 
             })
