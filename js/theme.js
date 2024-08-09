@@ -76,6 +76,18 @@ function createMasonryLayout(){
 
     if(window.innerWidth < breakPoint_767px){
         let collageColumns = 2
+        for(counter = 0; counter < active_mono_pro_component_collage_item.length; counter++){
+            active_mono_pro_component_collage_item[counter].style.marginTop = "unset"
+            if(counter >= collageColumns){
+                let elementAbove =  active_mono_pro_component_collage_item[counter - collageColumns].querySelector("img").getBoundingClientRect().bottom
+                let elementBelow =  active_mono_pro_component_collage_item[counter].querySelector("img").getBoundingClientRect().top
+                let elementAboveBellowOffset = elementAbove - elementBelow
+                let elementLeft =  active_mono_pro_component_collage_item[0].querySelector("img").getBoundingClientRect().right
+                let elementRight =  active_mono_pro_component_collage_item[1].querySelector("img").getBoundingClientRect().left
+                let elementLeftRightOffset = elementLeft - elementRight
+                active_mono_pro_component_collage_item[counter].style.marginTop = (elementAboveBellowOffset - elementLeftRightOffset) + "px"
+            }
+        }
 
     }
     else{
@@ -95,6 +107,11 @@ function createMasonryLayout(){
     }
 }
 
+createMasonryLayout()
+
+window.addEventListener("resize",()=>{
+    createMasonryLayout()
+})
 
 //HIDE AND UNHIDE COLLAGE ITEMS
 setTimeout(()=>{
