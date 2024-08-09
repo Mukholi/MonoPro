@@ -394,36 +394,38 @@ $mono-pro-baseline:30px;
 }
 
 //COLLAGE
-.mono-pro-component-collage-container{
+.mono-pro-component-collage-container {
     position: relative;
-    .mono-pro-component-collage{
+
+    .mono-pro-component-collage {
         position: relative;
-        .mono-pro-component-collage-grid{
-            position: relative;
-            display: flex;
-            // flex-direction: row;
-            flex-wrap: wrap;
+
+        .mono-pro-component-collage-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); // 2 columns by default
+            gap: 1rem; // Space between grid items
             width: 100%;
-            .mono-pro-component-collage-item-container{
+            position: relative;
+
+            @media (min-width: 767px) {
+                grid-template-columns: repeat(3, 1fr); // 3 columns for larger screens
+            }
+        }
+
+        .mono-pro-component-collage-item-container {
+            position: relative;
+            overflow: hidden;
+
+            .mono-pro-component-collage-item {
                 position: relative;
-                display: flex;
-                overflow: hidden;
-                @media (min-width: 0px){
-                    width: 50%;
-                }
-                @media (min-width: 767px){
-                    width: 33%;
-                }
-                .mono-pro-component-collage-item{
-                    position: relative;
-                    width: 95%;
-                    margin: unset auto;
-                    .mono-pro-component-collage-item-image{
-                        position: relative;
-                        width: 100%;
-                        height: auto;
-                    }
-                    
+                width: 100%;
+                margin: 0 auto;
+
+                .mono-pro-component-collage-item-image {
+                    display: block;
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover; // Ensures images cover the container while maintaining aspect ratio
                 }
             }
         }

@@ -371,33 +371,30 @@ h1 {
   position: relative;
 }
 .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
   width: 100%;
-}
-.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container {
   position: relative;
-  display: flex;
-  overflow: hidden;
-}
-@media (min-width: 0px) {
-  .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container {
-    width: 50%;
-  }
 }
 @media (min-width: 767px) {
-  .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container {
-    width: 33%;
+  .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
-.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container .mono-pro-component-collage-item {
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-item-container {
   position: relative;
-  width: 95%;
-  margin: unset auto;
+  overflow: hidden;
 }
-.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-grid .mono-pro-component-collage-item-container .mono-pro-component-collage-item .mono-pro-component-collage-item-image {
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-item-container .mono-pro-component-collage-item {
   position: relative;
   width: 100%;
+  margin: 0 auto;
+}
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-item-container .mono-pro-component-collage-item .mono-pro-component-collage-item-image {
+  display: block;
+  width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=theme.css.map */
