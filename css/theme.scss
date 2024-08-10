@@ -417,8 +417,10 @@ $mono-pro-baseline:30px;
             overflow: hidden;
 
             .mono-pro-component-collage-item {
+                display: block;
                 position: relative;
                 width: 100%;
+                height: auto;
                 margin: 0 auto;
 
                 .mono-pro-component-collage-item-image {

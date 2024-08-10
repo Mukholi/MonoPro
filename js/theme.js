@@ -123,6 +123,11 @@ setTimeout(()=>{
                     let allItems = mono_pro_component_selector_child.querySelectorAll(".mono-pro-component-collage-item-container")
                     for (let counter2 = 0; counter2 < allItems.length; counter2++){
                         allItems[counter2].style.display = "block"
+                        gsap.from(allItems[counter2].querySelector(".mono-pro-component-collage-item"),{
+                            opacity:0.5,
+                            scale:"1.1",
+                            left: "15%"
+                        })
                     }
                     createMasonryLayout()
 
@@ -132,10 +137,25 @@ setTimeout(()=>{
                     let allItems = mono_pro_component_selector_child.querySelectorAll(".mono-pro-component-collage-item-container")
                     for (let counter2 = 0; counter2 < allItems.length; counter2++){
                         allItems[counter2].style.display = "block"
+                        gsap.from(allItems[counter2].querySelector(".mono-pro-component-collage-item"),{
+                            opacity:0.5,
+                            scale:"1.1",
+                            left: "15%"
+                        })
 
                     }
                     for (let counter3 = 0; counter3 < selectedItems.length; counter3++){
+                        let selectedItemChild = selectedItems[counter3].querySelector(".mono-pro-component-collage-item")
                         selectedItems[counter3].style.display = "none"
+                        // selectedItemChild.style.opacity = 0.5
+                        // gsap.to(selectedItemChild,{
+                        //     top:"101%",
+                        //     duration: "1"
+                        // })
+                        // setTimeout(() => {
+                        //     selectedItems[counter3].style.display = "none"
+
+                        // }, 1500);
  
                     }
                     createMasonryLayout()
