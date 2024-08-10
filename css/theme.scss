@@ -415,19 +415,25 @@ $mono-pro-baseline:30px;
         .mono-pro-component-collage-item-container {
             position: relative;
             overflow: hidden;
-
+            width: 100%;
+            height: 100%;
             .mono-pro-component-collage-item {
                 display: block;
                 position: relative;
                 width: 100%;
                 height: auto;
                 margin: 0 auto;
-
                 .mono-pro-component-collage-item-image {
                     display: block;
                     width: 100%;
                     height: auto;
-                    object-fit: cover; // Ensures images cover the container while maintaining aspect ratio
+                    opacity: 1;
+                    object-fit: cover;
+                    transition: transform 1s linear;
+                }
+                .mono-pro-component-collage-item-image:hover{
+                    transform: scale(1.2);
+                    
                 }
             }
         }

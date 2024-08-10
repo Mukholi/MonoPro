@@ -385,6 +385,8 @@ h1 {
 .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-item-container {
   position: relative;
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 .mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-item-container .mono-pro-component-collage-item {
   display: block;
@@ -397,6 +399,11 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
+  opacity: 1;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: transform 1s linear;
+}
+.mono-pro-component-collage-container .mono-pro-component-collage .mono-pro-component-collage-item-container .mono-pro-component-collage-item .mono-pro-component-collage-item-image:hover {
+  transform: scale(1.2);
 }/*# sourceMappingURL=theme.css.map */
