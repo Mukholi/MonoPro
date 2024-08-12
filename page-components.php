@@ -96,6 +96,30 @@ get_header();
 		</div>
 	</div> -->
 
+	<div class="mono-pro-component-pricing-container">
+		<ul class="mono-pro-component-pricing" id="pricing-x">
+			<li class="mono-pro-component-pricing-item-container">
+				<div class="mono-pro-component-pricing-item">
+					<p class="mono-pro-component-pricing-item-header">Header</p>
+					<div class="mono-pro-component-pricing-item-cost">
+						<p class="mono-pro-component-pricing-item-cost-currency">UGX</p>
+						<p class="mono-pro-component-pricing-item-cost-figure">987,654</p>
+					</div>
+					<p class="mono-pro-component-pricing-item-subheading">Sub Heading</p>
+					<div class="mono-pro-component-pricing-item-details">
+						<div class="mono-pro-component-pricing-item-details-icon">
+							<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+							</div>
+						</div>
+						<p class="mono-pro-component-pricing-item-details-text">Item Particular</p>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+
 	<div style="height:15cm"></div>
 
 <?php
