@@ -43,7 +43,7 @@ get_header();
 		</div>
 	</div> -->
 
-	<div class="mono-pro-component-collage-container">
+	<!-- <div class="mono-pro-component-collage-container">
 		<div class="mono-pro-component-collage" id="mono_pro_component_collage" data="web,design,animation">
 			<div class="mono-pro-component-collage-grid">
 				<div class="mono-pro-component-collage-item-container web">
@@ -94,7 +94,7 @@ get_header();
 
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 	<div style="height:15cm"></div>
 
