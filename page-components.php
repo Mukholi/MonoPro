@@ -126,9 +126,9 @@ get_header();
 							<p class="mono-pro-component-pricing-item-details-text">1 Revision Round</p>
 						</li>
 					</ul>
-					<a>
-						<button>
-							<p>Get Started</p>
+					<a class="mono-pro-component-pricing-item-link">
+						<button class="mono-pro-component-pricing-item-link-button">
+							<p class="mono-pro-component-pricing-item-link-button-label">Get Started</p>
 						</button>	
 					</a>
 				</div>
