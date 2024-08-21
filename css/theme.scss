@@ -538,6 +538,18 @@ $mono-pro-baseline:30px;
                         }
                     }
                 }
+                .mono-pro-component-pricing-item-link{
+                    position: relative;
+                    width: 100%;
+                    .mono-pro-component-pricing-item-link-button{
+                        display: block;
+                        position: relative;
+                        margin: 0 auto;
+                        margin-top: $mono-pro-baseline;
+                        border: 2px solid red;
+                        height: $mono-pro-baseline;
+                    }
+                }
             }
         }
     }

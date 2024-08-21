@@ -506,4 +506,16 @@ h1 {
   padding: unset;
   margin-top: 3px;
   margin-right: auto;
+}
+.mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-link {
+  position: relative;
+  width: 100%;
+}
+.mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-link .mono-pro-component-pricing-item-link-button {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 2px solid red;
+  height: 30px;
 }/*# sourceMappingURL=theme.css.map */
