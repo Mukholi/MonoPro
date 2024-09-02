@@ -116,14 +116,32 @@ get_header();
 							</div>
 							<p class="mono-pro-component-pricing-item-details-text">Logo Design</p>
 						</li>
-						<li class="mono-pro-component-pricing-item-detail" itemChecked="true" itemCost="15000">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
 							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
 							<div class="mono-pro-component-pricing-item-details-icon">
 								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
 									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
 								</div>
 							</div>
-							<p class="mono-pro-component-pricing-item-details-text">1 Revision Round</p>
+							<p class="mono-pro-component-pricing-item-details-text">Brand & Marketing Assets</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Social Media Content</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">3 Revision Rounds</p>
 						</li>
 					</ul>
 					<a class="mono-pro-component-pricing-item-link" href="">
@@ -135,14 +153,14 @@ get_header();
 			</li>
 			<li class="mono-pro-component-pricing-item-container">
 				<div class="mono-pro-component-pricing-item">
-					<p class="mono-pro-component-pricing-item-header">Basic Package</p>
+					<p class="mono-pro-component-pricing-item-header">Premium Package</p>
 					<div class="mono-pro-component-pricing-item-cost">
 						<p class="mono-pro-component-pricing-item-cost-currency">UGX</p>
 						<p class="mono-pro-component-pricing-item-cost-figure">0</p>
 					</div>
-					<p class="mono-pro-component-pricing-item-subheading">Essential Design</p>
+					<p class="mono-pro-component-pricing-item-subheading">Comprehensive Design</p>
 					<ul class="mono-pro-component-pricing-item-detail-list">
-						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+					<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
 							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
 							<div class="mono-pro-component-pricing-item-details-icon">
 								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
@@ -151,14 +169,59 @@ get_header();
 							</div>
 							<p class="mono-pro-component-pricing-item-details-text">Logo Design</p>
 						</li>
-						<li class="mono-pro-component-pricing-item-detail" itemChecked="true" itemCost="15000">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
 							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
 							<div class="mono-pro-component-pricing-item-details-icon">
 								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
 									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
 								</div>
 							</div>
-							<p class="mono-pro-component-pricing-item-details-text">1 Revision Round</p>
+							<p class="mono-pro-component-pricing-item-details-text">Brand & Marketing Assets</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Social Media Content</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Business Cards</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Flyer / Brochure Design</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Custom Icon Design</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="" itemCost="15000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Unlimited Revision Rounds</p>
 						</li>
 					</ul>
 					<a class="mono-pro-component-pricing-item-link" href="">
@@ -170,14 +233,14 @@ get_header();
 			</li>
 			<li class="mono-pro-component-pricing-item-container">
 				<div class="mono-pro-component-pricing-item">
-					<p class="mono-pro-component-pricing-item-header">Basic Package</p>
+					<p class="mono-pro-component-pricing-item-header">Standard Package</p>
 					<div class="mono-pro-component-pricing-item-cost">
 						<p class="mono-pro-component-pricing-item-cost-currency">UGX</p>
 						<p class="mono-pro-component-pricing-item-cost-figure">0</p>
 					</div>
-					<p class="mono-pro-component-pricing-item-subheading">Essential Design</p>
+					<p class="mono-pro-component-pricing-item-subheading">Enhanced Design</p>
 					<ul class="mono-pro-component-pricing-item-detail-list">
-						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="10000">
 							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
 							<div class="mono-pro-component-pricing-item-details-icon">
 								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
@@ -186,14 +249,50 @@ get_header();
 							</div>
 							<p class="mono-pro-component-pricing-item-details-text">Logo Design</p>
 						</li>
-						<li class="mono-pro-component-pricing-item-detail" itemChecked="true" itemCost="15000">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="10000">
 							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
 							<div class="mono-pro-component-pricing-item-details-icon">
 								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
 									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
 								</div>
 							</div>
-							<p class="mono-pro-component-pricing-item-details-text">1 Revision Round</p>
+							<p class="mono-pro-component-pricing-item-details-text">Brand Guidelines</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Social Media Content</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Business Cards</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Email Signature</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="" itemCost="10000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">6 Revision Rounds</p>
 						</li>
 					</ul>
 					<a class="mono-pro-component-pricing-item-link" href="">

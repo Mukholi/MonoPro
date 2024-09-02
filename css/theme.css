@@ -422,12 +422,10 @@ h1 {
   margin: unset;
   padding: unset;
   list-style-type: none;
-  border: 1px solid red;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container {
   position: relative;
   width: 100%;
-  border: 1px solid green;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item {
   position: relative;
@@ -454,11 +452,13 @@ h1 {
   font-size: 0.8em !important;
   font-weight: 900 !important;
   margin-right: 5px;
+  color: Orange;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-cost .mono-pro-component-pricing-item-cost-figure {
   font-size: 2.2em !important;
   font-weight: 800 !important;
   margin-right: auto;
+  color: Orange;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-subheading {
   font-weight: 300 !important;
@@ -494,7 +494,7 @@ h1 {
   margin: auto;
   width: 10px;
   height: 10px;
-  border: 2px solid black;
+  border: 2px solid rgba(0, 0, 0, 0.5);
   border-radius: 3px;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-detail-list .mono-pro-component-pricing-item-detail .mono-pro-component-pricing-item-details-icon .mono-pro-component-pricing-item-details-icon-checkbox .mono-pro-component-pricing-item-details-icon-checkbox-indicator {
@@ -504,7 +504,7 @@ h1 {
   transform: translate(-50%, -50%) rotate(45deg);
   width: 25%;
   height: 80%;
-  background: red;
+  background: Orange;
   border-radius: 1000px;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-detail-list .mono-pro-component-pricing-item-detail .mono-pro-component-pricing-item-details-text {
@@ -516,12 +516,28 @@ h1 {
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-link {
   position: relative;
   width: 100%;
+  text-decoration: unset;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-link .mono-pro-component-pricing-item-link-button {
   display: block;
   position: relative;
   margin: 0 auto;
   margin-top: 30px;
-  border: 2px solid red;
-  height: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  height: 45px;
+  width: 210px;
+  background: unset;
+  cursor: pointer;
+}
+.mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-link .mono-pro-component-pricing-item-link-button p {
+  font-size: 0.9em;
+  padding: unset;
+  margin: unset;
+}
+.mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-link .mono-pro-component-pricing-item-link-button:hover {
+  border-color: Orange;
+  background: Orange;
+}
+.mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-link .mono-pro-component-pricing-item-link-button:hover p {
+  filter: invert(180);
 }/*# sourceMappingURL=theme.css.map */

@@ -102,6 +102,7 @@ const breakPoint_767px = 767;
 
 
 //PRICING
+var mono_pro_component_pricing_item = document.getElementsByClassName("mono-pro-component-pricing-item")
 var mono_pro_component_pricing_item_cost = document.getElementsByClassName("mono-pro-component-pricing-item-cost")
 var mono_pro_component_pricing_item_cost_figure = document.getElementsByClassName("mono-pro-component-pricing-item-cost-figure")
 var mono_pro_component_pricing_item_detail = document.getElementsByClassName("mono-pro-component-pricing-item-detail")
@@ -134,6 +135,7 @@ function pricingItemDetail(){
             mono_pro_component_pricing_item_detail[counter].addEventListener("click",()=>{
                 // alert(mono_pro_component_pricing_item_detail[counter].getAttribute("itemChecked"))
                 if (mono_pro_component_pricing_item_detail[counter].getAttribute("itemChecked") == "true"){
+
                     gsap.to(checkboxIndicator,{
                         height:"0%"
                     })
@@ -151,9 +153,32 @@ function pricingItemDetail(){
     }
 }
 
+function costFigure(){
+    for(let counter = 0; counter < mono_pro_component_pricing_item.length; counter++){
+        if(mono_pro_component_pricing_item[counter]){
+            function calculatePricingFigure(){
+                    let children = mono_pro_component_pricing_item[counter].querySelectorAll(".mono-pro-component-pricing-item-detail")
+                    if (children){
+                        let childrenItemCosts = 0;
+                        for(let counter2 = 0; counter2 < children.length; counter2++){
+                            if(children[counter2].getAttribute("itemChecked")!="false"){
+                                childrenItemCosts += parseInt(children[counter2].getAttribute("itemCost"))
+                            }
+                        }
+                        mono_pro_component_pricing_item_cost_figure[counter].textContent = "x"
+                        mono_pro_component_pricing_item_cost_figure[counter].textContent = childrenItemCosts
+                    }
+            }
+            calculatePricingFigure()
+            mono_pro_component_pricing_item[counter].addEventListener("click",calculatePricingFigure)
+        }
+    }
+}
+
 initCheckboxIndicator()
 pricingItemDetailsOffset()
 pricingItemDetail()
+costFigure()
 
 window.addEventListener("resize",()=>{
     pricingItemDetailsOffset()

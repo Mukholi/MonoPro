@@ -454,11 +454,11 @@ $mono-pro-baseline:30px;
         margin: unset;
         padding: unset;
         list-style-type: none;
-        border: 1px solid red;
+        // border: 1px solid red;
         .mono-pro-component-pricing-item-container{
             position: relative;
             width: 100%;
-            border: 1px solid green;
+            // border: 1px solid green;
             .mono-pro-component-pricing-item{
                 position: relative;
                 .mono-pro-component-pricing-item-header{
@@ -482,11 +482,13 @@ $mono-pro-baseline:30px;
                         font-size: 0.8em !important;
                         font-weight: 900 !important;
                         margin-right: 5px;
+                        color: $primaryColor;
                     }
                     .mono-pro-component-pricing-item-cost-figure{
                         font-size: 2.2em !important;
                         font-weight: 800 !important;
                         margin-right: auto;
+                        color: $primaryColor;
                     }
                 }
                 .mono-pro-component-pricing-item-subheading{
@@ -523,7 +525,7 @@ $mono-pro-baseline:30px;
                                 margin: auto;
                                 width: $mono-pro-baseline/3;
                                 height: $mono-pro-baseline/3;
-                                border: 2px solid black;
+                                border: 2px solid rgba(0, 0, 0, 0.5);
                                 border-radius: $mono-pro-baseline/10;
                                 .mono-pro-component-pricing-item-details-icon-checkbox-indicator{
                                     position: absolute;
@@ -532,7 +534,7 @@ $mono-pro-baseline:30px;
                                     transform: translate(-50%,-50%) rotate(45deg);
                                     width: 25%;
                                     height: 80%;
-                                    background: red;
+                                    background: $primaryColor;
                                     border-radius: 1000px;
                                 }
                             }
@@ -549,13 +551,29 @@ $mono-pro-baseline:30px;
                 .mono-pro-component-pricing-item-link{
                     position: relative;
                     width: 100%;
+                    text-decoration: unset;
                     .mono-pro-component-pricing-item-link-button{
                         display: block;
                         position: relative;
                         margin: 0 auto;
                         margin-top: $mono-pro-baseline;
-                        border: 2px solid red;
-                        height: $mono-pro-baseline;
+                        border: 2px solid rgba(0, 0, 0, 0.5);
+                        height: $mono-pro-baseline*1.5;
+                        width: $mono-pro-baseline*7;
+                        background: unset;
+                        cursor: pointer;
+                        p{
+                            font-size: 0.9em;
+                            padding: unset;
+                            margin: unset;
+                        }
+                    }
+                    .mono-pro-component-pricing-item-link-button:hover{
+                        border-color: $primaryColor;
+                        background: $primaryColor;
+                        p{
+                            filter: invert(180);
+                        }
                     }
                 }
             }
