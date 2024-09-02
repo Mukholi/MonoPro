@@ -447,12 +447,18 @@ $mono-pro-baseline:30px;
     position: relative;
     .mono-pro-component-pricing{
         position: relative;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        align-self: center;
         margin: unset;
         padding: unset;
-        // border: 1px solid red;
+        list-style-type: none;
+        border: 1px solid red;
         .mono-pro-component-pricing-item-container{
             position: relative;
-            // border: 1px solid green;
+            width: 100%;
+            border: 1px solid green;
             .mono-pro-component-pricing-item{
                 position: relative;
                 .mono-pro-component-pricing-item-header{
@@ -498,12 +504,14 @@ $mono-pro-baseline:30px;
                         position: relative;
                         align-items: center;
                         display: flex;
-                        width: 100%;
+                        width: auto;
+                        margin: unset;
                         cursor: pointer;
+                        //border: 1px solid red;
                         .mono-pro-component-pricing-item-details-icon-offset{
                             position: relative;
-                            width: $mono-pro-baseline/4;
-                            margin-left: 43%;
+                            
+                            
                         }
                         .mono-pro-component-pricing-item-details-icon{
                             position: relative;
@@ -534,7 +542,7 @@ $mono-pro-baseline:30px;
                             margin: unset;
                             padding: unset;
                             margin-top: 3px;
-                            margin-right: auto;
+                            // margin-right: auto;
                         }
                     }
                 }

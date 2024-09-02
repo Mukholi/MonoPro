@@ -99,3 +99,62 @@ const breakPoint_767px = 767;
 //         }
 //     }else{}
 // },1000)
+
+
+//PRICING
+var mono_pro_component_pricing_item_cost = document.getElementsByClassName("mono-pro-component-pricing-item-cost")
+var mono_pro_component_pricing_item_cost_figure = document.getElementsByClassName("mono-pro-component-pricing-item-cost-figure")
+var mono_pro_component_pricing_item_detail = document.getElementsByClassName("mono-pro-component-pricing-item-detail")
+var mono_pro_component_pricing_item_details_icon_offset = document.getElementsByClassName("mono-pro-component-pricing-item-details-icon-offset")
+var mono_pro_component_pricing_btn = document.getElementsByClassName("mono-pro-component-pricing-item-link-button")
+
+function pricingItemDetailsOffset(){
+    for (let counter = 0; counter < mono_pro_component_pricing_item_detail.length; counter++){
+        if(mono_pro_component_pricing_item_detail[counter]){
+            console.log(mono_pro_component_pricing_item_detail[counter].getBoundingClientRect().width)
+            mono_pro_component_pricing_item_details_icon_offset[counter].style.width = ((mono_pro_component_pricing_item_detail[counter].getBoundingClientRect().width)/4)+"px"
+        }
+    }
+}
+function initCheckboxIndicator(){
+    for(let counter = 0; counter < mono_pro_component_pricing_item_detail.length; counter++){
+        if(mono_pro_component_pricing_item_detail[counter]){
+            let checkboxIndicator = mono_pro_component_pricing_item_detail[counter].querySelector(".mono-pro-component-pricing-item-details-icon-checkbox-indicator")
+            if (mono_pro_component_pricing_item_detail[counter].getAttribute("itemChecked") == "false"){
+                checkboxIndicator.style.height = "0%"
+            }
+        }
+    }
+}
+
+function pricingItemDetail(){
+    for(let counter = 0; counter < mono_pro_component_pricing_item_detail.length; counter++){
+        if(mono_pro_component_pricing_item_detail[counter]){
+            let checkboxIndicator = mono_pro_component_pricing_item_detail[counter].querySelector(".mono-pro-component-pricing-item-details-icon-checkbox-indicator")
+            mono_pro_component_pricing_item_detail[counter].addEventListener("click",()=>{
+                // alert(mono_pro_component_pricing_item_detail[counter].getAttribute("itemChecked"))
+                if (mono_pro_component_pricing_item_detail[counter].getAttribute("itemChecked") == "true"){
+                    gsap.to(checkboxIndicator,{
+                        height:"0%"
+                    })
+                    mono_pro_component_pricing_item_detail[counter].setAttribute("itemChecked","false")
+                }
+                else if (mono_pro_component_pricing_item_detail[counter].getAttribute("itemChecked") == "false"){
+                    gsap.to(checkboxIndicator,{
+                        height:"80%",
+                        duration:0.5
+                    })
+                    mono_pro_component_pricing_item_detail[counter].setAttribute("itemChecked","true")
+                }
+            })
+        }
+    }
+}
+
+initCheckboxIndicator()
+pricingItemDetailsOffset()
+pricingItemDetail()
+
+window.addEventListener("resize",()=>{
+    pricingItemDetailsOffset()
+})

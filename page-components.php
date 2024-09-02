@@ -103,11 +103,11 @@ get_header();
 					<p class="mono-pro-component-pricing-item-header">Basic Package</p>
 					<div class="mono-pro-component-pricing-item-cost">
 						<p class="mono-pro-component-pricing-item-cost-currency">UGX</p>
-						<p class="mono-pro-component-pricing-item-cost-figure">987,654</p>
+						<p class="mono-pro-component-pricing-item-cost-figure">0</p>
 					</div>
 					<p class="mono-pro-component-pricing-item-subheading">Essential Design</p>
 					<ul class="mono-pro-component-pricing-item-detail-list">
-						<li class="mono-pro-component-pricing-item-detail">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
 							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
 							<div class="mono-pro-component-pricing-item-details-icon">
 								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
@@ -116,7 +116,7 @@ get_header();
 							</div>
 							<p class="mono-pro-component-pricing-item-details-text">Logo Design</p>
 						</li>
-						<li class="mono-pro-component-pricing-item-detail">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="true" itemCost="15000">
 							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
 							<div class="mono-pro-component-pricing-item-details-icon">
 								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
@@ -126,7 +126,77 @@ get_header();
 							<p class="mono-pro-component-pricing-item-details-text">1 Revision Round</p>
 						</li>
 					</ul>
-					<a class="mono-pro-component-pricing-item-link">
+					<a class="mono-pro-component-pricing-item-link" href="">
+						<button class="mono-pro-component-pricing-item-link-button">
+							<p class="mono-pro-component-pricing-item-link-button-label">Get Started</p>
+						</button>	
+					</a>
+				</div>
+			</li>
+			<li class="mono-pro-component-pricing-item-container">
+				<div class="mono-pro-component-pricing-item">
+					<p class="mono-pro-component-pricing-item-header">Basic Package</p>
+					<div class="mono-pro-component-pricing-item-cost">
+						<p class="mono-pro-component-pricing-item-cost-currency">UGX</p>
+						<p class="mono-pro-component-pricing-item-cost-figure">0</p>
+					</div>
+					<p class="mono-pro-component-pricing-item-subheading">Essential Design</p>
+					<ul class="mono-pro-component-pricing-item-detail-list">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Logo Design</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="true" itemCost="15000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">1 Revision Round</p>
+						</li>
+					</ul>
+					<a class="mono-pro-component-pricing-item-link" href="">
+						<button class="mono-pro-component-pricing-item-link-button">
+							<p class="mono-pro-component-pricing-item-link-button-label">Get Started</p>
+						</button>	
+					</a>
+				</div>
+			</li>
+			<li class="mono-pro-component-pricing-item-container">
+				<div class="mono-pro-component-pricing-item">
+					<p class="mono-pro-component-pricing-item-header">Basic Package</p>
+					<div class="mono-pro-component-pricing-item-cost">
+						<p class="mono-pro-component-pricing-item-cost-currency">UGX</p>
+						<p class="mono-pro-component-pricing-item-cost-figure">0</p>
+					</div>
+					<p class="mono-pro-component-pricing-item-subheading">Essential Design</p>
+					<ul class="mono-pro-component-pricing-item-detail-list">
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="false" itemCost="5000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">Logo Design</p>
+						</li>
+						<li class="mono-pro-component-pricing-item-detail" itemChecked="true" itemCost="15000">
+							<div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+							<div class="mono-pro-component-pricing-item-details-icon">
+								<div class="mono-pro-component-pricing-item-details-icon-checkbox">
+									<div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+								</div>
+							</div>
+							<p class="mono-pro-component-pricing-item-details-text">1 Revision Round</p>
+						</li>
+					</ul>
+					<a class="mono-pro-component-pricing-item-link" href="">
 						<button class="mono-pro-component-pricing-item-link-button">
 							<p class="mono-pro-component-pricing-item-link-button-label">Get Started</p>
 						</button>	
