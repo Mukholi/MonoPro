@@ -447,20 +447,26 @@ $mono-pro-baseline:30px;
     position: relative;
     .mono-pro-component-pricing{
         position: relative;
+        width: 100%;
         display: flex;
-        align-items: center;
-        align-content: center;
-        align-self: center;
+        flex-wrap: wrap;
         margin: unset;
         padding: unset;
+        justify-items: center;
         list-style-type: none;
-        // border: 1px solid red;
         .mono-pro-component-pricing-item-container{
             position: relative;
-            width: 100%;
             // border: 1px solid green;
+            @media (min-width: 0px) {
+                width: 100%;
+                margin-bottom: $mono-pro-baseline*2;
+            }
+            @media (min-width: 767px) {
+                width: 33%;
+            }
             .mono-pro-component-pricing-item{
                 position: relative;
+                width: 100%;
                 .mono-pro-component-pricing-item-header{
                     position: relative;
                     width: 100%;

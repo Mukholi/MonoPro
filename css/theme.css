@@ -415,20 +415,31 @@ h1 {
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing {
   position: relative;
+  width: 100%;
   display: flex;
-  align-items: center;
-  align-content: center;
-  align-self: center;
+  flex-wrap: wrap;
   margin: unset;
   padding: unset;
+  justify-items: center;
   list-style-type: none;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container {
   position: relative;
-  width: 100%;
+}
+@media (min-width: 0px) {
+  .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 767px) {
+  .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container {
+    width: 33%;
+  }
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item {
   position: relative;
+  width: 100%;
 }
 .mono-pro-component-pricing-container .mono-pro-component-pricing .mono-pro-component-pricing-item-container .mono-pro-component-pricing-item .mono-pro-component-pricing-item-header {
   position: relative;
