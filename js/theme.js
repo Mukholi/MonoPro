@@ -105,11 +105,24 @@ const breakPoint_767px = 767;
 var mono_pro_component_pricing_item = document.getElementsByClassName("mono-pro-component-pricing-item")
 var mono_pro_component_pricing_item_cost = document.getElementsByClassName("mono-pro-component-pricing-item-cost")
 var mono_pro_component_pricing_item_cost_figure = document.getElementsByClassName("mono-pro-component-pricing-item-cost-figure")
+var mono_pro_component_pricing_item_detail_list = document.getElementsByClassName("mono-pro-component-pricing-item-detail-list")
 var mono_pro_component_pricing_item_detail = document.getElementsByClassName("mono-pro-component-pricing-item-detail")
 var mono_pro_component_pricing_item_details_icon_offset = document.getElementsByClassName("mono-pro-component-pricing-item-details-icon-offset")
 var mono_pro_component_pricing_btn = document.getElementsByClassName("mono-pro-component-pricing-item-link-button")
 
 function pricingItemDetailsOffset(){
+    if(mono_pro_component_pricing_item_detail_list){
+        for(let counter0 = 0; counter0 < mono_pro_component_pricing_item_detail_list.length; counter0++){
+            if(mono_pro_component_pricing_item_detail_list[counter0].getAttribute("data")){
+
+                let data = mono_pro_component_pricing_item_detail_list[counter0].getAttribute("data")
+                data = data.toString()
+                let jsonData = JSON.parse(data)
+
+                console.log(jsonData)
+            }
+        }
+    }
     for (let counter = 0; counter < mono_pro_component_pricing_item_detail.length; counter++){
         if(mono_pro_component_pricing_item_detail[counter]){
             console.log(mono_pro_component_pricing_item_detail[counter].getBoundingClientRect().width)
