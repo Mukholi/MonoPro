@@ -306,7 +306,7 @@ get_header();
 	</div>
 	
 
-	<div style="height:90cm"></div>
+	<div style="height:20cm"></div>
 
 <?php
 get_footer();
