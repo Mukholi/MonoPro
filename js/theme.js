@@ -117,9 +117,33 @@ function pricingItemDetailsOffset(){
 
                 let data = mono_pro_component_pricing_item_detail_list[counter0].getAttribute("data")
                 data = data.toString()
-                let jsonData = JSON.parse(data)
+                
+                const regex = /{item:"(.*?)",\s*checked:"(.*?)",\s*amount:(\d+)}/g;
 
-                console.log(jsonData)
+                let result = [];
+                let match;
+
+                // Loop through matches and extract data
+                while ((match = regex.exec(data)) !== null) {
+                result.push({
+                    item: match[1],
+                    checked: match[2] === "false" ? false : match[2] === "true" ? true : null,
+                    amount: parseInt(match[3], 10),
+                });
+                }
+
+                // Convert to JSON
+                // console.log(typeof(JSON.stringify(result, null, 2)));  
+                result.forEach((dataElement) =>{
+
+                    console.log(`Item: ${dataElement.item}`);
+                    console.log(`Checked: ${dataElement.checked}`);
+                    console.log(`Amount: ${dataElement.amount}`);
+                    console.log('-----------------');
+
+                });
+                
+                
             }
         }
     }
