@@ -141,6 +141,22 @@ function pricingItemDetailsOffset(){
                     console.log(`Amount: ${dataElement.amount}`);
                     console.log('-----------------');
 
+                    let li = document.createElement('li');
+                    li.classList.add('mono-pro-component-pricing-item-detail');
+
+                    li.setAttribute('itemChecked', dataElement.checked === null ? "" : dataElement.checked);
+                    li.setAttribute('itemCost', dataElement.amount);
+
+                    li.innerHTML = `
+                    <div class="mono-pro-component-pricing-item-details-icon-offset"></div>
+                    <div class="mono-pro-component-pricing-item-details-icon">
+                      <div class="mono-pro-component-pricing-item-details-icon-checkbox">
+                        <div class="mono-pro-component-pricing-item-details-icon-checkbox-indicator"></div>
+                      </div>
+                    </div>
+                    <p class="mono-pro-component-pricing-item-details-text">${dataElement.item}</p>
+                  `;
+                  mono_pro_component_pricing_item_detail_list[counter0].appendChild(li);
                 });
                 
                 
